@@ -32,6 +32,13 @@ class _PriceScreenState extends State<PriceScreen> {
   }
 
   CupertinoPicker getiOSPicker() {
+    List<Text> pickerItems = [];
+    for (String currency in currenciesList) {
+      var newItem = Text(currency);
+      pickerItems.add(newItem);
+    }
+    return pickerItems;
+
     return CupertinoPicker(
       backgroundColor: Colors.lightBlue,
       itemExtent: 40.0,
