@@ -14,7 +14,7 @@ class _PriceScreenState extends State<PriceScreen> {
   String selectedCurrency = 'INR';
   var currentRate = '';
 
-  void getCurrentRate() {}
+  void getCurrentRate() async {}
 
   DropdownButton<String> getAndroidDropdown() {
     List<DropdownMenuItem<String>> dropdownItems = [];
