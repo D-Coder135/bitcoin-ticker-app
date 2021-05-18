@@ -22,7 +22,7 @@ class _PriceScreenState extends State<PriceScreen> {
     }
     return DropdownButton<String>(
       value: selectedCurrency,
-      items: getDropdownCurrenciesList(),
+      items: dropdownItems,
       onChanged: (value) {
         setState(() {
           selectedCurrency = value;
