@@ -9,7 +9,7 @@ class _PriceScreenState extends State<PriceScreen> {
   String selectedCurrency = 'USD';
 
   List<DropdownMenuItem> getDropdownCurrenciesList() {
-    List<DropdownMenuItem<String>> currenciesList = [];
+    List<DropdownMenuItem<String>> dropdownItems = [];
   }
 
   @override
