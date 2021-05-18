@@ -40,5 +40,6 @@ class CoinData {
         NetworkHelper('$coinApiURL/${cryptoList[0]}/INR?apiKey=$apiKey');
 
     var coinData = await networkHelper.getData();
+    return coinData;
   }
 }
