@@ -23,7 +23,7 @@ class _PriceScreenState extends State<PriceScreen> {
     return dropdownItems;
   }
 
-  List<Widget> getCupertinoPickerItems() {
+  List<Text> getCupertinoPickerItems() {
     List<Text> pickerItems = [];
     for (String currency in currenciesList) {
       var newItem = Text(currency);
