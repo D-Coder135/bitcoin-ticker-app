@@ -9,6 +9,8 @@ class PriceScreen extends StatefulWidget {
 }
 
 class _PriceScreenState extends State<PriceScreen> {
+  CoinData coinData = CoinData();
+
   String selectedCurrency = 'USD';
 
   DropdownButton<String> getAndroidDropdown() {
