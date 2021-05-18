@@ -29,6 +29,7 @@ class _PriceScreenState extends State<PriceScreen> {
       var newItem = Text(currency);
       pickerItems.add(newItem);
     }
+    return pickerItems;
   }
 
   @override
