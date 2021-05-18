@@ -60,6 +60,7 @@ class _PriceScreenState extends State<PriceScreen> {
             padding: EdgeInsets.only(bottom: 30.0),
             color: Colors.lightBlue,
             child: CupertinoPicker(
+              backgroundColor: Colors.lightBlue,
               itemExtent: 40.0,
             ),
           ),
