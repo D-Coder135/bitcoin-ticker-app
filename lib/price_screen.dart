@@ -11,7 +11,7 @@ class _PriceScreenState extends State<PriceScreen> {
   String selectedCurrency = 'USD';
 
   DropdownButton<String> getDropdownButton() {
-    DropdownButton<String>(
+    return DropdownButton<String>(
       value: selectedCurrency,
       items: getDropdownCurrenciesList(),
       onChanged: (value) {
@@ -19,8 +19,7 @@ class _PriceScreenState extends State<PriceScreen> {
           selectedCurrency = value;
         });
       },
-    )
-    ,
+    );
   }
 
   List<DropdownMenuItem> getDropdownCurrenciesList() {
