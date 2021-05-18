@@ -25,7 +25,9 @@ class _PriceScreenState extends State<PriceScreen> {
 
   List<Widget> getCupertinoPickerItems() {
     List<Text> pickerItems = [];
-    for (String currency in currenciesList) {}
+    for (String currency in currenciesList) {
+      var newItem = Text(currency);
+    }
   }
 
   @override
