@@ -12,11 +12,7 @@ class _PriceScreenState extends State<PriceScreen> {
   CoinData data = CoinData();
 
   String selectedCurrency = 'INR';
-  var currentRate;
-
-  void getCurrentRate(var data) {
-    currentRate = data['rate'];
-  }
+  var currentRate = '';
 
   DropdownButton<String> getAndroidDropdown() {
     List<DropdownMenuItem<String>> dropdownItems = [];
@@ -67,7 +63,6 @@ class _PriceScreenState extends State<PriceScreen> {
 
   @override
   Widget build(BuildContext context) {
-    getCurrentRate(data.getCurrencyData());
     return Scaffold(
       appBar: AppBar(
         title: Text('🤑 Coin Ticker'),
