@@ -48,8 +48,6 @@ class _PriceScreenState extends State<PriceScreen> {
     );
   }
 
-  List<Text> getCupertinoPickerItems() {
-  }
 
   @override
   Widget build(BuildContext context) {
