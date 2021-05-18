@@ -14,6 +14,8 @@ class _PriceScreenState extends State<PriceScreen> {
   String selectedCurrency = 'USD';
   var currentRate;
 
+  void getCurrencyData(var data) {}
+
   DropdownButton<String> getAndroidDropdown() {
     List<DropdownMenuItem<String>> dropdownItems = [];
     // A simple for loop can also be used but for-in (for-each) loop is more appropriate to use.
