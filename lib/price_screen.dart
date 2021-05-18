@@ -18,6 +18,7 @@ class _PriceScreenState extends State<PriceScreen> {
       );
       dropdownItems.add(newItem);
     }
+    return dropdownItems;
   }
 
   @override
