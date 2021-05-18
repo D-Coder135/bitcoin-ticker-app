@@ -49,13 +49,14 @@ class _PriceScreenState extends State<PriceScreen> {
     );
   }
 
-  Widget getPicker() {
-    if (Platform.isIOS) {
-      return getiOSPicker();
-    } else if (Platform.isAndroid) {
-      return getAndroidDropdown();
-    }
-  }
+  //
+  // Widget getPicker() {
+  //   if (Platform.isIOS) {
+  //     return getiOSPicker();
+  //   } else if (Platform.isAndroid) {
+  //     return getAndroidDropdown();
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {
