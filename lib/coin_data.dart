@@ -38,5 +38,7 @@ class CoinData {
   Future<dynamic> getCurrencyData() {
     NetworkHelper networkHelper =
         NetworkHelper('$coinApiURL/${cryptoList[0]}/INR?apiKey=$apiKey');
+
+    var coinData = networkHelper.getData();
   }
 }
