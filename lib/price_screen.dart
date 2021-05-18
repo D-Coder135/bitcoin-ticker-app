@@ -50,7 +50,9 @@ class _PriceScreenState extends State<PriceScreen> {
   }
 
   Widget getPicker() {
+    if (Platform.isIOS) {
 
+    }
   }
 
 
