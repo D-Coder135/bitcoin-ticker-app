@@ -18,7 +18,9 @@ class _PriceScreenState extends State<PriceScreen> {
       setState(() {
         currentRate = data['rate'].toStringAsFixed(0);
       });
-    } catch (exception) {}
+    } catch (exception) {
+      print(exception);
+    }
   }
 
   DropdownButton<String> getAndroidDropdown() {
