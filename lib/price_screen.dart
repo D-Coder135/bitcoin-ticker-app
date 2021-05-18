@@ -23,7 +23,9 @@ class _PriceScreenState extends State<PriceScreen> {
     return dropdownItems;
   }
 
-  List<Widget> getCupertinoPickerItems() {}
+  List<Widget> getCupertinoPickerItems() {
+    List<Text> pickerItems = [];
+  }
 
   @override
   Widget build(BuildContext context) {
