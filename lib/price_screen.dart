@@ -10,6 +10,8 @@ class PriceScreen extends StatefulWidget {
 class _PriceScreenState extends State<PriceScreen> {
   String selectedCurrency = 'USD';
 
+  DropdownButton<String> getDropdownButton() {}
+
   List<DropdownMenuItem> getDropdownCurrenciesList() {
     List<DropdownMenuItem<String>> dropdownItems = [];
     // A simple for loop can also be used but for-in (for-each) loop is more appropriate to use.
