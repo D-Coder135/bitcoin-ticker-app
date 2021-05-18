@@ -11,7 +11,7 @@ class PriceScreen extends StatefulWidget {
 class _PriceScreenState extends State<PriceScreen> {
   CoinData data = CoinData();
 
-  String selectedCurrency = 'USD';
+  String selectedCurrency = 'INR';
   var currentRate;
 
   void getCurrentRate(var data) {
