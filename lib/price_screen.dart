@@ -1,3 +1,4 @@
+import 'package:bitcoin_ticker/coin_data.dart';
 import 'package:flutter/material.dart';
 
 class PriceScreen extends StatefulWidget {
@@ -10,6 +11,7 @@ class _PriceScreenState extends State<PriceScreen> {
 
   List<DropdownMenuItem> getDropdownCurrenciesList() {
     List<DropdownMenuItem<String>> dropdownItems = [];
+    for (String currency in currenciesList) {}
   }
 
   @override
