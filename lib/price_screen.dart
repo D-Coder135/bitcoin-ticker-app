@@ -31,8 +31,6 @@ class _PriceScreenState extends State<PriceScreen> {
     );
   }
 
-  List<DropdownMenuItem> getDropdownCurrenciesList() {}
-
   List<Text> getCupertinoPickerItems() {
     List<Text> pickerItems = [];
     for (String currency in currenciesList) {
