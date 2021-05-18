@@ -43,12 +43,6 @@ class _PriceScreenState extends State<PriceScreen> {
   }
 
   List<Text> getCupertinoPickerItems() {
-    List<Text> pickerItems = [];
-    for (String currency in currenciesList) {
-      var newItem = Text(currency);
-      pickerItems.add(newItem);
-    }
-    return pickerItems;
   }
 
   @override
