@@ -53,7 +53,7 @@ class _PriceScreenState extends State<PriceScreen> {
     if (Platform.isIOS) {
       return getiOSPicker();
     } else if (Platform.isAndroid) {
-
+      return getAndroidDropdown();
     }
   }
 
