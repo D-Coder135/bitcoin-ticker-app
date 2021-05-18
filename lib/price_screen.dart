@@ -6,6 +6,8 @@ class PriceScreen extends StatefulWidget {
 }
 
 class _PriceScreenState extends State<PriceScreen> {
+  String selectedCurrency;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
