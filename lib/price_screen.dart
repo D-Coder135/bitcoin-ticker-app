@@ -16,6 +16,7 @@ class _PriceScreenState extends State<PriceScreen> {
         child: Text(currency),
         value: currency,
       );
+      dropdownItems.add(newItem);
     }
   }
 
