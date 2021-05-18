@@ -32,7 +32,14 @@ class _PriceScreenState extends State<PriceScreen> {
   }
 
   CupertinoPicker getiOSPicker() {
-
+    CupertinoPicker(
+      backgroundColor: Colors.lightBlue,
+      itemExtent: 40.0,
+      onSelectedItemChanged: (selectedIndex) {
+        print(selectedIndex);
+      },
+      children: getCupertinoPickerItems(),
+    );
   }
 
   List<Text> getCupertinoPickerItems() {
