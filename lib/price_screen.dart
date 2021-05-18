@@ -11,6 +11,7 @@ class _PriceScreenState extends State<PriceScreen> {
 
   List<DropdownMenuItem> getDropdownCurrenciesList() {
     List<DropdownMenuItem<String>> dropdownItems = [];
+    // A simple for loop can also be used but for-in (for-each) loop is more appropriate to use.
     for (String currency in currenciesList) {
       var newItem = DropdownMenuItem(
         child: Text(currency),
