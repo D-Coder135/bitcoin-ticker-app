@@ -67,6 +67,7 @@ class _PriceScreenState extends State<PriceScreen> {
 
   @override
   Widget build(BuildContext context) {
+    getCurrentRate(data.getCurrencyData());
     return Scaffold(
       appBar: AppBar(
         title: Text('🤑 Coin Ticker'),
