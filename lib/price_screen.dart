@@ -44,7 +44,7 @@ class _PriceScreenState extends State<PriceScreen> {
       onSelectedItemChanged: (selectedIndex) {
         print(selectedIndex);
       },
-      children: getCupertinoPickerItems(),
+      children: pickerItems,
     );
   }
 
