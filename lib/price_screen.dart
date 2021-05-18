@@ -60,7 +60,9 @@ class _PriceScreenState extends State<PriceScreen> {
                   value: 'INR',
                 ),
               ],
-              onChanged: (value) {},
+              onChanged: (value) {
+                setState(() {});
+              },
             ),
           ),
         ],
