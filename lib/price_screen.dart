@@ -57,6 +57,9 @@ class _PriceScreenState extends State<PriceScreen> {
                   value: 'INR',
                 ),
               ],
+              onChanged: (value) {
+                print(value);
+              },
             ),
           ),
         ],
