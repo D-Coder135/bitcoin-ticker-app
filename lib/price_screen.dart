@@ -13,10 +13,12 @@ class _PriceScreenState extends State<PriceScreen> {
   var currentRate = '';
 
   void getCurrentRate() async {
-    var data = await CoinData().getCurrencyData();
-    setState(() {
-      currentRate = data['rate'].toStringAsFixed(0);
-    });
+    try {
+      var data = await CoinData().getCurrencyData();
+      setState(() {
+        currentRate = data['rate'].toStringAsFixed(0);
+      });
+    } catch (exception) {}
   }
 
   DropdownButton<String> getAndroidDropdown() {
