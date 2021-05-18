@@ -46,6 +46,7 @@ class _PriceScreenState extends State<PriceScreen> {
               items: [
                 DropdownMenuItem(
                   child: Text('USD'),
+                  value: 'USD',
                 ),
               ],
             ),
