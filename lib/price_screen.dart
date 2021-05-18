@@ -14,7 +14,7 @@ class _PriceScreenState extends State<PriceScreen> {
   String selectedCurrency = 'USD';
   var currentRate;
 
-  void getCurrencyData(var data) {
+  void getCurrentRate(var data) {
     currentRate = data['rate'];
   }
 
