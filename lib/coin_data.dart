@@ -1,3 +1,5 @@
+import 'package:bitcoin_ticker/networking.dart';
+
 const List<String> currenciesList = [
   'AUD',
   'BRL',
@@ -32,4 +34,9 @@ const apiKey = '08B3E308-7EDD-4545-BCE1-7F5BD1EC8165';
 
 const coinApiURL = 'https://rest.coinapi.io/v1/exchangerate';
 
-class CoinData {}
+class CoinData {
+  Future<dynamic> getCurrencyData() {
+    NetworkHelper networkHelper =
+        NetworkHelper('$coinApiURL/${cryptoList[0]}/INR?apiKey=$apiKey');
+  }
+}
