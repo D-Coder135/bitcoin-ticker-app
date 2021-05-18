@@ -59,6 +59,7 @@ class _PriceScreenState extends State<PriceScreen> {
             color: Colors.lightBlue,
             child: DropdownButton<String>(
               value: selectedCurrency,
+              items: getDropdownCurrenciesList(),
               // items: [
               //   DropdownMenuItem(
               //     child: Text('USD'),
