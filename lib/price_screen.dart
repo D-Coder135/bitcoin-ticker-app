@@ -73,6 +73,7 @@ class _PriceScreenState extends State<PriceScreen> {
   @override
   void initState() {
     super.initState();
+    getCurrentRate();
   }
 
   @override
