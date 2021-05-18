@@ -48,6 +48,10 @@ class _PriceScreenState extends State<PriceScreen> {
     );
   }
 
+  Widget getPicker() {
+
+  }
+
 
   @override
   Widget build(BuildContext context) {
