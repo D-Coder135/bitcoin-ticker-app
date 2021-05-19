@@ -61,15 +61,6 @@ class _PriceScreenState extends State<PriceScreen> {
     );
   }
 
-  //
-  // Widget getPicker() {
-  //   if (Platform.isIOS) {
-  //     return getiOSPicker();
-  //   } else if (Platform.isAndroid) {
-  //     return getAndroidDropdown();
-  //   }
-  // }
-
   @override
   void initState() {
     super.initState();
