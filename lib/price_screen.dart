@@ -39,6 +39,7 @@ class _PriceScreenState extends State<PriceScreen> {
       onChanged: (value) {
         setState(() {
           selectedCurrency = value;
+          getCurrentRate();
         });
       },
     );
