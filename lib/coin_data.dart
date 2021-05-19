@@ -1,5 +1,4 @@
 import 'package:bitcoin_ticker/networking.dart';
-import 'package:bitcoin_ticker/price_screen.dart';
 
 const List<String> currenciesList = [
   'AUD',
