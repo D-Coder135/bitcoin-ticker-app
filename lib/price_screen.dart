@@ -14,7 +14,7 @@ class _PriceScreenState extends State<PriceScreen> {
 
   void getCurrentRate() async {
     try {
-      var data = await CoinData().getCurrencyData();
+      var data = await CoinData().getCurrencyData(selectedCurrency);
       setState(() {
         currentRate = data['rate'].toStringAsFixed(0);
       });
