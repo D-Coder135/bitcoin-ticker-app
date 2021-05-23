@@ -22,7 +22,7 @@ class _PriceScreenState extends State<PriceScreen> {
           setState(() {
             currentRateForBTC = data['rate'].toStringAsFixed(0);
           });
-        }
+        } else if (index == 1) {}
       }
     } catch (exception) {
       print(exception);
