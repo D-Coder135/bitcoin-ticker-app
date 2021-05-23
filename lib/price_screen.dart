@@ -10,13 +10,13 @@ class PriceScreen extends StatefulWidget {
 
 class _PriceScreenState extends State<PriceScreen> {
   String selectedCurrency = 'INR';
-  var currentRate = '';
+  var currentRateForBTC = '';
 
   void getCurrentRate() async {
     try {
       var data = await CoinData().getCurrencyData(selectedCurrency);
       setState(() {
-        currentRate = data['rate'].toStringAsFixed(0);
+        currentRateForBTC = data['rate'].toStringAsFixed(0);
       });
     } catch (exception) {
       print(exception);
@@ -90,7 +90,7 @@ class _PriceScreenState extends State<PriceScreen> {
               child: Padding(
                 padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 28.0),
                 child: Text(
-                  '1 BTC = $currentRate $selectedCurrency',
+                  '1 BTC = $currentRateForBTC $selectedCurrency',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 20.0,
@@ -111,7 +111,7 @@ class _PriceScreenState extends State<PriceScreen> {
               child: Padding(
                 padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 28.0),
                 child: Text(
-                  '1 ETH = $currentRate $selectedCurrency',
+                  '1 ETH = $currentRateForBTC $selectedCurrency',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 20.0,
@@ -132,7 +132,7 @@ class _PriceScreenState extends State<PriceScreen> {
               child: Padding(
                 padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 28.0),
                 child: Text(
-                  '1 LTC = $currentRate $selectedCurrency',
+                  '1 LTC = $currentRateForBTC $selectedCurrency',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 20.0,
