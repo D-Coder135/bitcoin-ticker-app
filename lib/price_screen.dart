@@ -95,6 +95,7 @@ class _PriceScreenState extends State<PriceScreen> {
         children: <Widget>[
           Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[],
           ),
           // Padding(
           //   padding: EdgeInsets.fromLTRB(18.0, 18.0, 18.0, 0),
