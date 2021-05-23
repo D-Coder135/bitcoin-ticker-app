@@ -130,7 +130,7 @@ class _PriceScreenState extends State<PriceScreen> {
                     padding:
                         EdgeInsets.symmetric(vertical: 15.0, horizontal: 28.0),
                     child: Text(
-                      '1 BTC = $currentRateForBTC $selectedCurrency',
+                      '1 ETH = $currentRateForETH $selectedCurrency',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 20.0,
@@ -152,7 +152,7 @@ class _PriceScreenState extends State<PriceScreen> {
                     padding:
                         EdgeInsets.symmetric(vertical: 15.0, horizontal: 28.0),
                     child: Text(
-                      '1 BTC = $currentRateForBTC $selectedCurrency',
+                      '1 LTC = $currentRateForLTC $selectedCurrency',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 20.0,
