@@ -17,7 +17,7 @@ class _PriceScreenState extends State<PriceScreen> {
   void getCurrentRate() async {
     try {
       for (int index = 0; index < cryptoList.length; index++) {
-        var data = await CoinData().getCurrencyData(selectedCurrency);
+        var data = await CoinData().getCurrencyData(index, selectedCurrency);
         setState(() {
           currentRateForBTC = data['rate'].toStringAsFixed(0);
         });
