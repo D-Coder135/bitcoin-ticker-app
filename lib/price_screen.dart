@@ -90,7 +90,7 @@ class _PriceScreenState extends State<PriceScreen> {
         title: Text('🤑 Coin Ticker'),
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Column(
@@ -108,6 +108,7 @@ class _PriceScreenState extends State<PriceScreen> {
                     padding:
                         EdgeInsets.symmetric(vertical: 15.0, horizontal: 28.0),
                     child: Text(
+                      /**/
                       '1 BTC = $currentRateForBTC $selectedCurrency',
                       textAlign: TextAlign.center,
                       style: TextStyle(
