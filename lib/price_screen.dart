@@ -12,6 +12,7 @@ class _PriceScreenState extends State<PriceScreen> {
   String selectedCurrency = 'INR';
   var currentRateForBTC = '';
   var currentRateForETH = '';
+  var currentRateForLTC = '';
 
   void getCurrentRate() async {
     try {
