@@ -26,7 +26,7 @@ class _PriceScreenState extends State<PriceScreen> {
           setState(() {
             currentRateForETH = data['rate'].toStringAsFixed(0);
           });
-        }
+        } else {}
       }
     } catch (exception) {
       print(exception);
