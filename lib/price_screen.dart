@@ -11,6 +11,7 @@ class PriceScreen extends StatefulWidget {
 class _PriceScreenState extends State<PriceScreen> {
   String selectedCurrency = 'INR';
   var currentRateForBTC = '';
+  var currentRateForETH = '';
 
   void getCurrentRate() async {
     try {
