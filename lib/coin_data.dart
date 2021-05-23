@@ -35,7 +35,7 @@ const apiKey = 'DD905C0D-2292-40E0-861A-2C44613076C6';
 const coinApiURL = 'https://rest.coinapi.io/v1/exchangerate';
 
 class CoinData {
-  Future<dynamic> getCurrencyData(var selectedCurrency) async {
+  Future<dynamic> getCurrencyData(int index, var selectedCurrency) async {
     NetworkHelper networkHelper = NetworkHelper(
         '$coinApiURL/${cryptoList[0]}/$selectedCurrency?apiKey=$apiKey');
 
